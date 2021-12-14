@@ -1,0 +1,23 @@
+{
+    "name": "King - e1",
+    "symbol": "",
+    "image": "King.png",
+    "collection": {
+      "name": "Fisher Spassky 1972",
+      "family": "Chess - NFT"
+    },
+    "properties": {
+      "files": [
+        {
+          "uri": "King.png",
+          "type": "image/png"
+        }
+      ],
+      "creators": [
+        {
+          "address": "6TcYLzdAGMHHt8u3EUHmdinfhLu2J61bXHBHfoJoEqn2",
+          "share": 100
+        }
+      ]
+    }
+  }

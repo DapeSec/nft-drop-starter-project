@@ -1,0 +1,23 @@
+{
+    "name": "Knight 1 - b1",
+    "symbol": "",
+    "image": "Knight1.png",
+    "collection": {
+      "name": "Fisher Spassky 1972",
+      "family": "Chess - NFT"
+    },
+    "properties": {
+      "files": [
+        {
+          "uri": "Knight1.png",
+          "type": "image/png"
+        }
+      ],
+      "creators": [
+        {
+          "address": "6TcYLzdAGMHHt8u3EUHmdinfhLu2J61bXHBHfoJoEqn2",
+          "share": 100
+        }
+      ]
+    }
+  }
