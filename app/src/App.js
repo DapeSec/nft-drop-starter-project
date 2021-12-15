@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
 import twitterLogo from './assets/twitter-logo.svg';
+import CandyMachine from './CandyMachine';
 
 // Constants
 const TWITTER_HANDLE = 'Dape25';
@@ -68,6 +69,7 @@ const App = () => {
           <p className="sub-text">Don't be a Pawn. Mint your NFT now on Solana!</p>
           {!walletAddress && renderNotConnectedContainer()}
         </div>
+        {walletAddress && <CandyMachine walletAddress={window.solana} />}
         <div className="footer-container">
           <img alt="Twitter Logo" className="twitter-logo" src={twitterLogo} />
           <a
@@ -75,7 +77,7 @@ const App = () => {
             href={TWITTER_LINK}
             target="_blank"
             rel="noreferrer"
-          >{`built by @${TWITTER_HANDLE}`}</a>
+          >{`Dev: @${TWITTER_HANDLE}`}</a>
         </div>
       </div>
     </div>
