@@ -49,10 +49,11 @@ const App = () => {
       className="cta-button connect-wallet-button"
       onClick={connectWallet}
     >
-      Connect to Phantom Wallet
+      Connect Phantom Wallet
     </button>
   );
 
+  // Use Effects
   useEffect(() => {
     const onLoad = async () => {
       await checkIfWalletIsConnected();
@@ -61,12 +62,13 @@ const App = () => {
     return () => window.removeEventListener('load', onLoad);
   }, []);
 
+  // Return
   return (
     <div className="App">
       <div className="container">
         <div className="header-container">
-          <p className="header">♟Chess - NFT♟</p>
-          <p className="sub-text">Don't be a Pawn. Mint your NFT now on Solana!</p>
+          <p className="header">♟Fishcer Spassky Collection Drop♟</p>
+          <p className="sub-text">Don't be a Pawn. Mint a Chess NFT now on Solana!</p>
           {!walletAddress && renderNotConnectedContainer()}
         </div>
         {walletAddress && <CandyMachine walletAddress={window.solana} />}
